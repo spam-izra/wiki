@@ -26,6 +26,7 @@ db:
   port: $(DB_PORT)
   user: '$(DB_USER)'
   pass: '$(DB_PASS)'
+  db: '$(DB_NAME)'
   ssl: false
 
   # Optional - PostgreSQL / MySQL / MariaDB only:
