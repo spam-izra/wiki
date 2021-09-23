@@ -24,11 +24,11 @@ db:
   type: postgres
 
   # PostgreSQL / MySQL / MariaDB / MS SQL Server only:
-  host: localhost
-  port: 5432
-  user: wikijs
-  pass: wikijsrocks
-  db: wiki
+  type: $(DB_TYPE)
+  host: '$(DB_HOST)'
+  port: $(DB_PORT)
+  user: '$(DB_USER)'
+  pass: '$(DB_PASS)'
   ssl: false
 
   # Optional - PostgreSQL / MySQL / MariaDB only:
