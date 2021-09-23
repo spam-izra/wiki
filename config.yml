@@ -21,9 +21,6 @@ port: 3000
 # - sqlite = SQLite 3.9 or later
 
 db:
-  type: postgres
-
-  # PostgreSQL / MySQL / MariaDB / MS SQL Server only:
   type: $(DB_TYPE)
   host: '$(DB_HOST)'
   port: $(DB_PORT)
